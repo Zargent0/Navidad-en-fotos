@@ -31,7 +31,7 @@ import java.io.File
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: android.os.Bundle?) {
     super.onCreate(savedInstanceState)
-    setContent { MaterialTheme { Surface(Modifier.fillMaxSize()) { App() } } }
+    setContent { MaterialTheme(colorScheme = darkColorScheme()) { Surface(Modifier.fillMaxSize()) { App() } } }
   }
 }
 
